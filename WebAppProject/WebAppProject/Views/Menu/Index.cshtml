@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Hover Line Effect</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="~/Content/style.css">
+
+
+</head>
+
+<body>
+    <h1>Bolsa de empleos</h1>
+
+    <ul c-hover-after>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="">Crear Empleo</a></li>
+        <li><a href="#">Buscar</a></li>
+        <span></span>
+    </ul>
+
+    <div>
+
+    </div>
+
+    <script src="~/Scripts/index.js"></script>
+    <div>
+        <h1 id="empleo">Crear Empleo</h1>
+        <svg width="15px" height="15px"><use xlink:href="#plus"></use></svg>
+    </div>
+    <center>
+
+
+        <form>
+
+            <select>
+                <option value="Local">Local</option>
+                <option value="Internacional">Internacional</option>
+                <option value="Remoto">Remoto</option>
+            </select>
+
+            <input type="text" id="company" name="company" placeholder="Compañia" />
+            <input type="text" id="position" name="position" placeholder="Posicion" />
+            <input type="text" id="location" name="location" placeholder="Ubicacion">
+            <input type="submit" value="Submit">
+
+        </form>
+    </center>
+
+</body>
+</html>

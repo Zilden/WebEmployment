@@ -1,0 +1,50 @@
+body {
+	background: #ededed;
+	padding: 0 20px;
+	margin: 0;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin: 80px 0;
+}
+
+ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	list-style-type: none;
+	padding: 0;
+}
+
+ul li:not(:last-child) {
+	margin-right: 20px;
+}
+
+ul a {
+	display: block;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	padding: 7px 15px;
+}
+
+ul > span {
+	position: absolute;
+	border-bottom: 4px solid transparent;
+	z-index: -1;
+	-webkit-transform: translateX(-60px);
+	        transform: translateX(-60px);
+}
+
+ul a,
+ul > span {
+	-webkit-transition: all .35s ease-in-out;
+	transition: all .35s ease-in-out;
+}
