@@ -2,30 +2,55 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Hover Line Effect</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+
+
+    <link rel="stylesheet" href="~/Content/style.css">
+
+
+</head>
+
+<body>
+    <h1>Bolsa de empleos</h1>
+
+    <ul c-hover-after>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Crear Empleo</a></li>
+        <li><a href="#">Buscar</a></li>
+        <span></span>
+    </ul>
+
+    <div>
+
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+
+    <script src="~/Scripts/index.js"></script>
+    <div>
+        <h1 id="empleo">Crear Empleo</h1>
+        <svg width="15px" height="15px"><use xlink:href="#plus"></use></svg>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+
+        <form style="text-align: center">
+
+            <select>
+                <option value="Local">Local</option>
+                <option value="Internacional">Internacional</option>
+                <option value="Remoto">Remoto</option>
+            </select>
+
+            <input type="text" id="company" name="company" placeholder="Compañia" />
+            <input type="text" id="position" name="position" placeholder="Posicion" />
+            <input type="text" id="location" name="location" placeholder="Ubicacion" />
+            <input type="submit" value="Submit">
+
+        </form>
+
+</body>
+</html>
