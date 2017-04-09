@@ -58,7 +58,7 @@ window.onload = function () {
     p2.innerHTML = "Posicion: " + position;
     
     var p3 = document.createElement("p");
-    p3.setAttribute("class", "position");
+    p3.setAttribute("class", "location");
     p3.innerHTML = "Ubicacion: " + location
 
     curr.appendChild(p1);
